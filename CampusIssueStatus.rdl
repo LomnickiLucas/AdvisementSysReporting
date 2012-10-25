@@ -298,13 +298,9 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="ReportingDataSource">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=LUCAS-BURNOUTPC\;Initial Catalog="C:\USERS\LUCAS\DOCUMENTS\VISUAL STUDIO 2010\WEBSITES\WEBSITE1\APP_DATA\ADVISEMENTDB.MDF"</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
-      </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>f3a12628-40ba-494a-b321-9b1075c5d1f0</rd:DataSourceID>
+      <DataSourceReference>ReportingDataSource</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>a020cdf3-d122-463d-85f2-f43c1871c675</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
