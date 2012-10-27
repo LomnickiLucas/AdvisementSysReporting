@@ -2,8 +2,8 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ReportingDataSource">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=LUCAS-BURNOUTPC;Initial Catalog="C:\USERS\LUCAS\DOCUMENTS\VISUAL STUDIO 2010\WEBSITES\WEBSITE1\APP_DATA\ADVISEMENTDB.MDF"</ConnectString>
+    <ConnectString>Data Source=PARK-TRINITY-PC;Initial Catalog="C:\USERS\LUCAS\DOCUMENTS\VISUAL STUDIO 2010\WEBSITES\WEBSITE1\APP_DATA\ADVISEMENTDB.MDF"</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
-  <DataSourceID>6c392e21-5a62-4e31-bf4b-d06ca92e73cf</DataSourceID>
+  <DataSourceID>df30eaae-9f3e-4c9e-9338-f1cdf7b22a38</DataSourceID>
 </RptDataSource>
