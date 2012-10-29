@@ -13,6 +13,10 @@
       <Name>CampusIssueStatus.rdl</Name>
       <FullPath>CampusIssueStatus.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>StudentIssueStatus.rdl</Name>
+      <FullPath>StudentIssueStatus.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
