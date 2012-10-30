@@ -123,7 +123,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Trafalgar Road Campus", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Trafalgar Road Campus", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -188,7 +188,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="In Progress",1,0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="In Progress",1,0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -253,7 +253,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="Pending",1,0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="Pending",1,0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -318,7 +318,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="On Hold",1,0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="On Hold",1,0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -383,7 +383,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="Complete",1,0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value="Trafalgar Road Campus" And Fields!status.Value="Complete",1,0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -448,7 +448,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -513,7 +513,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "In Progress", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "In Progress", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -578,7 +578,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "DavisCampus" And Fields!status.Value = "Pending", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "DavisCampus" And Fields!status.Value = "Pending", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -643,7 +643,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "On Hold", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "On Hold", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -708,7 +708,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "Complete", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus" And Fields!status.Value = "Complete", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -773,7 +773,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -838,7 +838,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "In Progress", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "In Progress", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -903,7 +903,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "Pending", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "Pending", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -968,7 +968,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "On Hold", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "On Hold", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1033,7 +1033,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(IIf(Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "Complete", 1, 0))</Value>
+                              <Value>=Sum(IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus" And Fields!status.Value = "Complete", 1, 0))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1316,13 +1316,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2in</Width>
+              <Width>1.19792in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.63666in</Width>
+              <Width>1.45833in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1338,7 +1338,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>*Need To Do"</Value>
+                              <Value>=Parameters!StartDate.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1398,7 +1398,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>*Need To Do*</Value>
+                              <Value>=Parameters!EndDate.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1515,7 +1515,7 @@
         <Top>0.57167in</Top>
         <Left>0.26959in</Left>
         <Height>0.5in</Height>
-        <Width>6.63666in</Width>
+        <Width>4.65624in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -1523,6 +1523,412 @@
           </Border>
         </Style>
       </Tablix>
+      <Tablix Name="Tablix3">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>cname</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox29">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>programname</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox29</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox43">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>issuename</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox43</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox50">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>date</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox50</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox21">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>status</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="cname">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!cname.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>cname</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="programname">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!programname.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>programname</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox47">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!issuename.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox47</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="date">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!date.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>date</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="status">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!status.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>status</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <SortExpressions>
+          <SortExpression>
+            <Value>=Fields!cname.Value</Value>
+          </SortExpression>
+          <SortExpression>
+            <Value>=Fields!programname.Value</Value>
+          </SortExpression>
+          <SortExpression>
+            <Value>=Fields!status.Value</Value>
+          </SortExpression>
+        </SortExpressions>
+        <Top>2.01958in</Top>
+        <Left>3.92583in</Left>
+        <Height>0.5in</Height>
+        <Width>5in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="Textbox53">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>For checking purposes only</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox53</rd:DefaultName>
+        <Top>1.69667in</Top>
+        <Left>4.89458in</Left>
+        <Height>0.25in</Height>
+        <Width>2.03125in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>6.16542in</Height>
     <Style />
@@ -1586,14 +1992,14 @@ FROM            issue INNER JOIN
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>.</Value>
+          <Value>*</Value>
         </Values>
       </DefaultValue>
       <Prompt>Program</Prompt>
       <ValidValues>
         <ParameterValues>
           <ParameterValue>
-            <Value>.</Value>
+            <Value>*</Value>
             <Label>All</Label>
           </ParameterValue>
           <ParameterValue>
@@ -1622,6 +2028,14 @@ FROM            issue INNER JOIN
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="StartDate">
+      <DataType>DateTime</DataType>
+      <Prompt>Start Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EndDate">
+      <DataType>DateTime</DataType>
+      <Prompt>End Date</Prompt>
     </ReportParameter>
   </ReportParameters>
   <Language>en-US</Language>
