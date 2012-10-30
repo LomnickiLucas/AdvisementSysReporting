@@ -10,12 +10,12 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>CampusIssueStatus.rdl</Name>
-      <FullPath>CampusIssueStatus.rdl</FullPath>
+      <Name>CampusIssueReport.rdl</Name>
+      <FullPath>CampusIssueReport.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>StudentIssueStatus.rdl</Name>
-      <FullPath>StudentIssueStatus.rdl</FullPath>
+      <Name>StudentReport.rdl</Name>
+      <FullPath>StudentReport.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
