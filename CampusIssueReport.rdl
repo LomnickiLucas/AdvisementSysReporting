@@ -1534,11 +1534,11 @@
           </Border>
         </Style>
       </Tablix>
-      <Chart Name="Sparkline1">
+      <Chart Name="Chart2">
         <ChartCategoryHierarchy>
           <ChartMembers>
             <ChartMember>
-              <Group Name="Sparkline1_CategoryGroup">
+              <Group Name="Chart2_CategoryGroup">
                 <GroupExpressions>
                   <GroupExpression>=Fields!status.Value</GroupExpression>
                 </GroupExpressions>
@@ -1571,15 +1571,12 @@
               <ChartDataPoints>
                 <ChartDataPoint>
                   <ChartDataPointValues>
-                    <X>=Fields!status.Value</X>
                     <Y>=Sum(IIf(Parameters!Program.Value = "All",IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!cname.Value = "Trafalgar Road Campus", 1, 0),IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Trafalgar Road Campus", 1, 0)))</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
                     <Style />
                     <UseValueAsLabel>true</UseValueAsLabel>
-                    <Visible>true</Visible>
                   </ChartDataLabel>
-                  <ToolTip>=Count(Fields!status.Value)</ToolTip>
                   <Style />
                   <ChartMarker>
                     <Style />
@@ -1597,6 +1594,9 @@
                   <Style />
                 </ChartDataLabel>
               </ChartEmptyPoints>
+              <ChartItemInLegend>
+                <LegendText>Trafalgar Road Campus</LegendText>
+              </ChartItemInLegend>
               <ValueAxisName>Primary</ValueAxisName>
               <CategoryAxisName>Primary</CategoryAxisName>
               <ChartSmartLabel>
@@ -1608,15 +1608,12 @@
               <ChartDataPoints>
                 <ChartDataPoint>
                   <ChartDataPointValues>
-                    <X>=Fields!status.Value</X>
                     <Y>=Sum(IIf(Parameters!Program.Value = "All",IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!cname.Value = "Davis Campus", 1, 0),IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Davis Campus", 1, 0)))</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
                     <Style />
                     <UseValueAsLabel>true</UseValueAsLabel>
-                    <Visible>true</Visible>
                   </ChartDataLabel>
-                  <ToolTip>=Count(Fields!status.Value)</ToolTip>
                   <Style />
                   <ChartMarker>
                     <Style />
@@ -1634,6 +1631,9 @@
                   <Style />
                 </ChartDataLabel>
               </ChartEmptyPoints>
+              <ChartItemInLegend>
+                <LegendText>Davis Campus</LegendText>
+              </ChartItemInLegend>
               <ValueAxisName>Primary</ValueAxisName>
               <CategoryAxisName>Primary</CategoryAxisName>
               <ChartSmartLabel>
@@ -1645,15 +1645,11 @@
               <ChartDataPoints>
                 <ChartDataPoint>
                   <ChartDataPointValues>
-                    <X>=Fields!status.Value</X>
                     <Y>=Sum(IIf(Parameters!Program.Value = "All",IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!cname.Value = "Hazel McCallion Campus", 1, 0),IIf(Fields!date.Value &gt;= Parameters!StartDate.Value And Fields!date.Value &lt;= Parameters!EndDate.Value And Fields!programname.Value = Parameters!Program.Value And Fields!cname.Value = "Hazel McCallion Campus", 1, 0)))</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
                     <Style />
-                    <UseValueAsLabel>true</UseValueAsLabel>
-                    <Visible>true</Visible>
                   </ChartDataLabel>
-                  <ToolTip>=Count(Fields!status.Value)</ToolTip>
                   <Style />
                   <ChartMarker>
                     <Style />
@@ -1671,6 +1667,9 @@
                   <Style />
                 </ChartDataLabel>
               </ChartEmptyPoints>
+              <ChartItemInLegend>
+                <LegendText>Hazel McCallion Campus</LegendText>
+              </ChartItemInLegend>
               <ValueAxisName>Primary</ValueAxisName>
               <CategoryAxisName>Primary</CategoryAxisName>
               <ChartSmartLabel>
@@ -1684,18 +1683,15 @@
           <ChartArea Name="Default">
             <ChartCategoryAxes>
               <ChartAxis Name="Primary">
-                <Visible>False</Visible>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
                 <ChartAxisTitle>
-                  <Caption>Axis Title</Caption>
+                  <Caption>Status</Caption>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
                 </ChartAxisTitle>
-                <Margin>False</Margin>
-                <IntervalType>Default</IntervalType>
                 <ChartMajorGridLines>
                   <Enabled>False</Enabled>
                   <Style>
@@ -1723,7 +1719,6 @@
                 </ChartAxisScaleBreak>
               </ChartAxis>
               <ChartAxis Name="Secondary">
-                <Visible>False</Visible>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1733,7 +1728,6 @@
                     <FontSize>8pt</FontSize>
                   </Style>
                 </ChartAxisTitle>
-                <Margin>False</Margin>
                 <ChartMajorGridLines>
                   <Enabled>False</Enabled>
                   <Style>
@@ -1764,12 +1758,11 @@
             </ChartCategoryAxes>
             <ChartValueAxes>
               <ChartAxis Name="Primary">
-                <Visible>False</Visible>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
                 <ChartAxisTitle>
-                  <Caption>Axis Title</Caption>
+                  <Caption># of Issues</Caption>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -1800,7 +1793,6 @@
                 </ChartAxisScaleBreak>
               </ChartAxis>
               <ChartAxis Name="Secondary">
-                <Visible>False</Visible>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1838,11 +1830,39 @@
               </ChartAxis>
             </ChartValueAxes>
             <Style>
-              <BackgroundColor>#00ffffff</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </ChartArea>
         </ChartAreas>
+        <ChartLegends>
+          <ChartLegend Name="Default">
+            <Style>
+              <BackgroundGradientType>None</BackgroundGradientType>
+              <FontSize>8pt</FontSize>
+            </Style>
+            <ChartLegendTitle>
+              <Caption />
+              <Style>
+                <FontSize>8pt</FontSize>
+                <FontWeight>Bold</FontWeight>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </ChartLegendTitle>
+            <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+            <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+          </ChartLegend>
+        </ChartLegends>
+        <ChartTitles>
+          <ChartTitle Name="Default">
+            <Caption>Campus Issue Report</Caption>
+            <Style>
+              <BackgroundGradientType>None</BackgroundGradientType>
+              <FontWeight>Bold</FontWeight>
+              <TextAlign>General</TextAlign>
+              <VerticalAlign>Top</VerticalAlign>
+            </Style>
+          </ChartTitle>
+        </ChartTitles>
         <Palette>BrightPastel</Palette>
         <ChartBorderSkin>
           <Style>
@@ -1859,12 +1879,11 @@
             <VerticalAlign>Top</VerticalAlign>
           </Style>
         </ChartNoDataMessage>
-        <rd:DesignerMode>Sparkline</rd:DesignerMode>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.51958in</Top>
-        <Left>4.12375in</Left>
-        <Height>1in</Height>
-        <Width>1.5in</Width>
+        <Top>6.05083in</Top>
+        <Left>0.28001in</Left>
+        <Height>3.13542in</Height>
+        <Width>5.91667in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -1876,10 +1895,10 @@
         </Style>
       </Chart>
     </ReportItems>
-    <Height>5.87375in</Height>
+    <Height>9.28125in</Height>
     <Style />
   </Body>
-  <Width>6.41542in</Width>
+  <Width>6.19668in</Width>
   <Page>
     <PageHeader>
       <Height>0.93625in</Height>

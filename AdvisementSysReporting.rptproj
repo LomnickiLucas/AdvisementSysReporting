@@ -17,6 +17,10 @@
       <Name>StudentReport.rdl</Name>
       <FullPath>StudentReport.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AdvisorReport.rdl</Name>
+      <FullPath>AdvisorReport.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

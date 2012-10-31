@@ -1047,7 +1047,7 @@
         <Top>1.80208in</Top>
         <Left>0.23709in</Left>
         <Height>0.5in</Height>
-        <Width>5.99083in</Width>
+        <Width>5.99082in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -1356,8 +1356,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Issues</DataSetName>
-        <Top>1.80208in</Top>
-        <Left>6.57042in</Left>
+        <Top>2.54166in</Top>
+        <Left>0.23709in</Left>
         <Height>1in</Height>
         <Width>2.73042in</Width>
         <ZIndex>3</ZIndex>
@@ -1569,7 +1569,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>date1</rd:DefaultName>
@@ -1641,10 +1643,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ApplicationForReadmission</DataSetName>
-        <Top>2.60417in</Top>
-        <Left>0.24875in</Left>
+        <Top>3.73959in</Top>
+        <Left>0.23043in</Left>
         <Height>0.75in</Height>
-        <Width>4.10541in</Width>
+        <Width>4.10542in</Width>
         <ZIndex>4</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -1857,7 +1859,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>date3</rd:DefaultName>
@@ -1929,8 +1933,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>LateEnrollment</DataSetName>
-        <Top>3.58333in</Top>
-        <Left>0.24875in</Left>
+        <Top>4.71875in</Top>
+        <Left>0.23043in</Left>
         <Height>0.75in</Height>
         <Width>4.12625in</Width>
         <ZIndex>5</ZIndex>
@@ -2145,7 +2149,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>date2</rd:DefaultName>
@@ -2217,8 +2223,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ProbationaryContract</DataSetName>
-        <Top>4.55208in</Top>
-        <Left>0.23959in</Left>
+        <Top>5.6875in</Top>
+        <Left>0.22127in</Left>
         <Height>0.75in</Height>
         <Width>4.14458in</Width>
         <ZIndex>6</ZIndex>
@@ -2433,7 +2439,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>date4</rd:DefaultName>
@@ -2505,10 +2513,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>PartTime</DataSetName>
-        <Top>5.54167in</Top>
-        <Left>0.24875in</Left>
+        <Top>6.67709in</Top>
+        <Left>0.23959in</Left>
         <Height>0.75in</Height>
-        <Width>4.13541in</Width>
+        <Width>4.13542in</Width>
         <ZIndex>7</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -2721,7 +2729,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>date5</rd:DefaultName>
@@ -2793,8 +2803,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Withdraw</DataSetName>
-        <Top>6.55208in</Top>
-        <Left>0.23959in</Left>
+        <Top>7.6875in</Top>
+        <Left>0.23043in</Left>
         <Height>0.75in</Height>
         <Width>4.14458in</Width>
         <ZIndex>8</ZIndex>
@@ -2808,10 +2818,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>7.39583in</Height>
+    <Height>8.60416in</Height>
     <Style />
   </Body>
-  <Width>10.41542in</Width>
+  <Width>6.46875in</Width>
   <Page>
     <PageHeader>
       <Height>0.81125in</Height>
