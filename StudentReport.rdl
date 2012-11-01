@@ -113,7 +113,7 @@
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.0625in</Width>
+              <Width>1.82166in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -326,7 +326,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Parameters!StartDate.Value</Value>
+                            <Value>=FormatDateTime(Parameters!StartDate.Value, DateFormat.ShortDate)</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -476,7 +476,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Parameters!EndDate.Value</Value>
+                            <Value>=FormatDateTime(Parameters!EndDate.Value, DateFormat.ShortDate)</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -615,7 +615,7 @@
         <Top>0.59375in</Top>
         <Left>0.22792in</Left>
         <Height>1in</Height>
-        <Width>6.24083in</Width>
+        <Width>5.99999in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -627,10 +627,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.70833in</Width>
+              <Width>0.88667in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.82166in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -715,7 +715,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1374,7 +1374,7 @@
               <Width>1.375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.73042in</Width>
+              <Width>0.91415in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -1565,7 +1565,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1646,7 +1646,7 @@
         <Top>3.73959in</Top>
         <Left>0.23043in</Left>
         <Height>0.75in</Height>
-        <Width>4.10542in</Width>
+        <Width>3.28915in</Width>
         <ZIndex>4</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -1664,7 +1664,7 @@
               <Width>1.375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.75125in</Width>
+              <Width>0.91415in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -1855,7 +1855,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1936,7 +1936,7 @@
         <Top>4.71875in</Top>
         <Left>0.23043in</Left>
         <Height>0.75in</Height>
-        <Width>4.12625in</Width>
+        <Width>3.28915in</Width>
         <ZIndex>5</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -1954,7 +1954,7 @@
               <Width>1.38416in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.76042in</Width>
+              <Width>0.91415in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -2145,7 +2145,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -2226,7 +2226,7 @@
         <Top>5.6875in</Top>
         <Left>0.22127in</Left>
         <Height>0.75in</Height>
-        <Width>4.14458in</Width>
+        <Width>3.29831in</Width>
         <ZIndex>6</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!status.Value)</Hidden>
@@ -2244,7 +2244,7 @@
               <Width>1.375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.76042in</Width>
+              <Width>0.90499in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -2435,7 +2435,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -2516,7 +2516,7 @@
         <Top>6.67709in</Top>
         <Left>0.23959in</Left>
         <Height>0.75in</Height>
-        <Width>4.13542in</Width>
+        <Width>3.27999in</Width>
         <ZIndex>7</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -2534,7 +2534,7 @@
               <Width>1.38416in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.76042in</Width>
+              <Width>0.90499in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -2725,7 +2725,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!date.Value</Value>
+                              <Value>=FormatDateTime(Fields!date.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -2806,7 +2806,7 @@
         <Top>7.6875in</Top>
         <Left>0.23043in</Left>
         <Height>0.75in</Height>
-        <Width>4.14458in</Width>
+        <Width>3.28915in</Width>
         <ZIndex>8</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issueid.Value)</Hidden>
@@ -2818,10 +2818,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>8.60416in</Height>
+    <Height>8.4375in</Height>
     <Style />
   </Body>
-  <Width>6.46875in</Width>
+  <Width>6.22791in</Width>
   <Page>
     <PageHeader>
       <Height>0.81125in</Height>

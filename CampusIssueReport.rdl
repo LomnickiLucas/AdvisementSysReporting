@@ -1319,13 +1319,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.69792in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.83333in</Width>
+              <Width>1.04166in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1341,7 +1341,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Parameters!StartDate.Value</Value>
+                              <Value>=FormatDateTime(Parameters!StartDate.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1405,7 +1405,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Parameters!EndDate.Value</Value>
+                              <Value>=FormatDateTime(Parameters!EndDate.Value, DateFormat.ShortDate)</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1526,7 +1526,7 @@
         <Top>0.57167in</Top>
         <Left>0.26959in</Left>
         <Height>0.5in</Height>
-        <Width>5.53125in</Width>
+        <Width>4.04166in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
