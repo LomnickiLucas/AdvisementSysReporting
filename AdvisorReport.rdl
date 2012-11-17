@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Advisor Report</Value>
+                <Value>= "Advisor Report For " &amp; First(Fields!fname.Value, "Employee") &amp; " " &amp; First(Fields!lname.Value, "Employee")</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>20pt</FontSize>
@@ -37,6 +37,40 @@
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
+                  <Textbox Name="Textbox6">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Start Date:</Value>
+                            <Style>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+            </TablixCornerRow>
+            <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
                   <Textbox Name="Textbox7">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -44,7 +78,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Advisor Name:</Value>
+                            <Value>Role:</Value>
                             <Style>
                               <FontWeight>Bold</FontWeight>
                             </Style>
@@ -73,13 +107,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.30208in</Width>
+              <Width>1.58334in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.90625in</Width>
+              <Width>2.14583in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -192,7 +226,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!role.Value</Value>
+                              <Value>=Fields!faculty.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -211,70 +245,11 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <ColSpan>3</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox27">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Faculty:</Value>
-                              <Style>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox27</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="role">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!faculty.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>role</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
+                <TablixCell />
               </TablixCells>
             </TablixRow>
           </TablixRows>
@@ -285,21 +260,23 @@
               <TablixHeader>
                 <Size>0.25in</Size>
                 <CellContents>
-                  <Textbox Name="Textbox8">
+                  <Textbox Name="Textbox9">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Fields!fname.Value &amp; " " &amp; Fields!lname.Value</Value>
+                            <Value>=Parameters!start.Value</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox8</rd:DefaultName>
+                    <rd:DefaultName>Textbox9</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -313,19 +290,54 @@
                   </Textbox>
                 </CellContents>
               </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0.25in</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox8">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!role.Value</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox8</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
             </TablixMember>
             <TablixMember>
               <TablixHeader>
                 <Size>0.25in</Size>
                 <CellContents>
-                  <Textbox Name="Textbox12">
+                  <Textbox Name="Textbox11">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Employee ID:</Value>
+                            <Value>End Date:</Value>
                             <Style>
                               <FontWeight>Bold</FontWeight>
                             </Style>
@@ -334,7 +346,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox12</rd:DefaultName>
+                    <rd:DefaultName>Textbox11</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -348,26 +360,65 @@
                   </Textbox>
                 </CellContents>
               </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0.25in</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox12">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Employee ID:</Value>
+                                <Style>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox12</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
             </TablixMember>
             <TablixMember>
               <TablixHeader>
                 <Size>0.25in</Size>
                 <CellContents>
-                  <Textbox Name="Textbox10">
+                  <Textbox Name="Textbox13">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Parameters!EmpID.Value</Value>
+                            <Value>=Parameters!end.Value</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox10</rd:DefaultName>
+                    <rd:DefaultName>Textbox13</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -381,6 +432,41 @@
                   </Textbox>
                 </CellContents>
               </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0.25in</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox10">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Parameters!EmpID.Value</Value>
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox10</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
             </TablixMember>
           </TablixMembers>
         </TablixColumnHierarchy>
@@ -432,7 +518,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Role:</Value>
+                            <Value>Faculty:</Value>
                             <Style>
                               <FontWeight>Bold</FontWeight>
                             </Style>
@@ -461,8 +547,8 @@
         <DataSetName>Employee</DataSetName>
         <Top>0.54167in</Top>
         <Left>0.10417in</Left>
-        <Height>0.75in</Height>
-        <Width>6.26042in</Width>
+        <Height>1in</Height>
+        <Width>5.78125in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -922,7 +1008,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>AllIssue</DataSetName>
-        <Top>1.53125in</Top>
+        <Top>1.61111in</Top>
         <Left>0.10417in</Left>
         <Height>1.5in</Height>
         <Width>2.1875in</Width>
@@ -1440,7 +1526,7 @@
         <Top>3.46181in</Top>
         <Left>0.10417in</Left>
         <Height>0.75in</Height>
-        <Width>5.26042in</Width>
+        <Width>5.26041in</Width>
         <ZIndex>3</ZIndex>
         <Visibility>
           <Hidden>=IsNothing(Fields!issuename.Value)</Hidden>
@@ -1469,7 +1555,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox142</rd:DefaultName>
-        <Top>3.08681in</Top>
+        <Top>3.125in</Top>
         <Left>0.10417in</Left>
         <Height>0.25in</Height>
         <Width>4.26042in</Width>
@@ -1488,10 +1574,10 @@
     <Height>4.23958in</Height>
     <Style />
   </Body>
-  <Width>7.36458in</Width>
+  <Width>7.43625in</Width>
   <Page>
     <PageHeader>
-      <Height>0.88417in</Height>
+      <Height>0.77083in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1507,6 +1593,80 @@
             </Border>
           </Style>
         </Image>
+        <Rectangle Name="Rectangle1">
+          <ReportItems>
+            <Textbox Name="ExecutionTime">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="This report was generated on " &amp; Globals!ExecutionTime</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ExecutionTime</rd:DefaultName>
+              <Height>0.25in</Height>
+              <Width>3.67708in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="employeeid">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Generated by: " &amp; "*insert username here*"</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>employeeid</rd:DefaultName>
+              <Top>0.26389in</Top>
+              <Height>0.25in</Height>
+              <Width>3.67708in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Left>3.655in</Left>
+          <Height>0.77083in</Height>
+          <Width>3.78125in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Rectangle>
       </ReportItems>
       <Style>
         <Border>
@@ -1584,12 +1744,18 @@
           <QueryParameter Name="@employeeID">
             <Value>=Parameters!EmpID.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@start">
+            <Value>=Parameters!start.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@end">
+            <Value>=Parameters!end.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandText>SELECT        employee.employeeid, employee.fname, employee.lname, employee.phonenum, employee.email, employee.faculty, employee.role, issue.employeeid AS Expr1, 
                          issue.issueid, issue.issuename, issue.date, issue.status, issue.urgency
 FROM            employee INNER JOIN
                          issue ON employee.employeeid = issue.employeeid
-WHERE        (employee.employeeid = @employeeID)</CommandText>
+WHERE        (employee.employeeid = @employeeID) AND (issue.date &gt;= @start) AND (issue.date &lt;= @end)</CommandText>
       </Query>
       <Fields>
         <Field Name="employeeid">
@@ -1700,11 +1866,17 @@ WHERE        (employeeid = @empID)</CommandText>
           <QueryParameter Name="@empID">
             <Value>=Parameters!EmpID.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@start">
+            <Value>=Parameters!start.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@end">
+            <Value>=Parameters!end.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandText>SELECT        issuename, date, status, urgency, employeeid, catagory, description, studentid
 FROM            issue
 WHERE        (employeeid = @empID) AND (DATEADD(month, 1, date) &lt; { fn NOW() }) AND (status = N'In Progress' OR
-                         status = N'Pending')
+                         status = N'Pending') AND (date &gt;= @start) AND (date &lt;= @end)
 ORDER BY date</CommandText>
       </Query>
       <Fields>
@@ -1752,6 +1924,24 @@ ORDER BY date</CommandText>
         </Values>
       </DefaultValue>
       <Prompt>Employee ID:</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="start">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>9/1/2012 12:00:00 AM</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>start</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="end">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>12/12/2013 12:00:00 AM</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>end</Prompt>
     </ReportParameter>
   </ReportParameters>
   <EmbeddedImages>
